@@ -6,5 +6,5 @@
 
 - Automatizar preenchimento da planilha com os dados
 
-  - a href="https://github.com/gladistory/Python_projects-/blob/main/Automatizar_preenchimento.py">Para rodar no google colab</a>
+  - <a href="https://github.com/gladistory/Python_projects-/blob/main/Automatizar_preenchimento.py">Para rodar no google colab</a>
 
