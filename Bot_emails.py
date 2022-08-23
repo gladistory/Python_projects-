@@ -5,7 +5,6 @@ from banco_de_emails import email
 from time import sleep
 from email.mime.image import MIMEImage
 emails = email
-# senha_anovoteto = "xrrmixwhwrsrcylh"
 
 print(f'Gerando emails...')
 
