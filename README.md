@@ -10,3 +10,14 @@
 
 ## Pymail
 
+ ### Gerar senha app google
+
+  - <a href="https://atendimento.tecnospeed.com.br/hc/pt-br/articles/4418115119127-Como-criar-senha-de-aplicativo-para-email">Gerar senha app google - tutorial</a>
+  
+ ### Código para o bot enviar os emails
+
+  - <a href="https://github.com/gladistory/Python_projects-/blob/main/Bot_emails.py">Código do bot</a>
+
+### Banco de emails no formato de lista
+
+  - <a href="https://github.com/gladistory/Python_projects-/blob/main/banco_de_emails.py">Banco de Emails</a>
