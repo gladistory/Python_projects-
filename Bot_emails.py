@@ -10,15 +10,14 @@ emails = email
 print(f'Gerando emails...')
 
 for c in range(0, len(email)):
-    endereco_gmail = "corretormaylson@gmail.com"
-    senha_app = "sigfkvjxinmdblls"
-    mail_de = 'corretormaylson@gmail.com'
+    endereco_gmail = "Seu email"
+    senha_app = "Senha App"
+    mail_de = 'Seu email'
+    # Lista de emails
     mail_para = f"{email[c]}"
-    mail_assunto = "ATENÇÃO - Timbé / Tijucas - Chácara 20.000 m²"
-    mail_texto = '\nAgende agora uma visita! ' \
-                 '\nContato: 48 99139-0999' \
-                 '\nWhatsApp: https://api.whatsapp.com/send?phone=55489139-0999' \
-                 '\nMais detalhes em nosso site: https://bityli.com/apIbSo'
+    # lista de emails end
+    mail_assunto = "Assunto"
+    mail_texto = 'Message text'
 
     # Direcionamento dos emails
     mimemsg = MIMEMultipart()
@@ -27,19 +26,12 @@ for c in range(0, len(email)):
     mimemsg['Subject'] = mail_assunto
 
     # Adição do texto e imagem ao corpo do email - Towers
-    '''text_html = MIMEText(
-        '<a href="https://sc.olx.com.br/florianopolis-e-regiao/imoveis/pronto-para-morar-amplo-apartamento-'
-        '72-m-privativos-909534372"><img src="https://uploaddeimagens.com.br/images/003/370/846/original'
-        '/Email_Towers.png?1628298831"></a>'
-        '<h3><img src="https://uploaddeimagens.com.br/images/003/387/991/original/logo-whatsapp-verde-'
-        'icone-ios-android-256.png?1629323880" alt="wpp.logo" width="25px" class="img-fluid" align="left">'
-        'Whatsapp Corretor Maylson:<a href="https://api.whatsapp.com/send?phone=5548996761343">'
-        '(48)99676-1343 </a></h3>'
-        .format('body', 'Biguaçu Towers.png'), 'html')'''
-    # imagem anexada Timbé
-    with open('Timbé _Tijucas.png', 'rb') as fp:
+    '''text_html = MIMEText('')
+       '''
+    # imagem anexada
+    with open('file name', 'rb') as fp:
         img = MIMEImage(fp.read())
-        img.add_header('Content-Disposition', 'attachment', filename="Timbé _Tijucas.png")
+        img.add_header('Content-Disposition', 'attachment', filename="file name")
 
     mimemsg.attach(MIMEText(mail_texto, 'plain'))
     mimemsg.attach(img)
